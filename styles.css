@@ -1,3 +1,16 @@
+:root {
+  --font-color-light: #677788;
+  --font-color-dark: #000000;
+  --common-blue: #2476ff;
+  --white: white;
+
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+
+}
+
+
 *,
 ::after,
 ::before {
@@ -6,6 +19,13 @@
 
 body {
   font-family: 'Inter', sans-serif;
+}
+
+button {
+  padding: 14px 26px;
+  background-color: var(--common-blue);
+  border: none;
+  border-radius: 20px;
 }
 
 ul {
@@ -35,7 +55,7 @@ a { text-decoration: none; }
 }
 
 .navbar img {
-  width: 100px;
+  width: 150px;
   margin-right: auto;
 }
 
@@ -115,6 +135,59 @@ a:hover {
   color: white;
   font-weight: 500;
 }
+
+.circle-logos img {
+  width: 50px;
+  height: 50px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding: 40px 30px 0;
+}
+
+.hero-block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex: 1;
+}
+
+.hero-block-text h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.hero-block-text p {
+  color: var(--font-color-light);
+  font-size: var(--font-size-14);
+  margin-bottom: 2em;
+}
+
+.hero-clicks > button {
+  margin-right: 2em;
+}
+
+.hero-clicks button a {
+  color: white;
+}
+
+.hero-clicks .learn-more {
+  font-size: var(--font-size-14);
+  color: var(--common-blue);
+  font-weight: 600;
+}
+
+.circle-logos {
+  flex: 1;
+  position: relative;
+}
+
 
 
 
